@@ -150,6 +150,8 @@ class Drafter implements DrafterInterface
             $this->getProcessCommand()
         );
 
+        $process->setTimeout(null);
+        
         return $process;
     }
 
